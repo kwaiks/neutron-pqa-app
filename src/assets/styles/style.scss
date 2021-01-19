@@ -1,0 +1,136 @@
+// change the theme
+$primary-bg: #bf360c;
+$text-dark: #212529;
+$text-light: #fafafa;
+$bg-dark: #424242;
+$theme-colors: (
+  "primary":$primary-bg,
+  "danger": #ff4136
+);
+
+nav > div > a {
+    background-color: $bg-dark;
+    padding: 0.5rem;
+    color: $text-light;
+    text-decoration: none;
+}
+
+nav > div > a:hover {
+    color: $text-light;
+    text-decoration: none;
+}
+
+.active-nav {
+    color: $text-dark !important;
+    background-color: white !important;
+}
+
+.meter-text{
+    font-size: 1.4em;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+.meter-block {
+    flex-direction: column;
+}
+
+.meter-title {
+    font-size: 1.4em;
+    text-align: center;
+    padding: 0.5rem 0;
+    font-weight: bold;
+}
+
+.meter-title.l1 {
+
+    font-size: 1.4em;
+    text-align: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ff5722;
+}
+
+.meter-title.l2 {
+    border-bottom: 1px solid #ffeb3b;
+}
+
+.meter-title.l3 {
+    border-bottom: 1px solid #2196f3;
+}
+
+.meter-title.total {
+    border-bottom: 1px solid $bg-dark;
+}
+
+.card {
+    border-radius: 0px !important;
+    box-shadow: 2px 2px 2px #9e9e9e;
+}
+
+.form-check {
+    margin-left: 0.5rem;
+}
+
+.form-check-input {
+    margin-top: 0.1rem !important;
+}
+
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';
+  
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0; 
+    border: 0;
+    box-sizing: border-box;
+}
+*:focus {
+    outline: 0;
+}
+html, body, #root {
+    height: 100%;
+}
+body {
+    -webkit-font-smoothing: antialiased;
+}
+body, input, button {
+    font: 14px 'Roboto', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+button {
+    cursor: pointer;
+}
+
+.chartWrapper {
+    position: relative;
+}
+
+.chartWrapper > canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+    pointer-events:none;
+}
+
+.chartAreaWrapper {
+    width: 600px;
+    overflow-x: scroll;
+}
+
+.logging-header {
+    color: white;
+    background-color: gray;
+    width:100%;
+    padding:2px;
+}
+
+.date-time-wrapper {
+    border: 1px solid black;
+    min-width: 160px;
+}
